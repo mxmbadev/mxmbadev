@@ -21,15 +21,16 @@ sections:
           icon: text
           listable: hidden
       -
-        handle: content
+        handle: about_me
         field:
           restrict: false
           automatic_line_breaks: true
           automatic_links: false
           escape_markup: true
-          smartypants: false
+          smartypants: true
           type: markdown
-          display: Content
+          display: 'About Me'
+          listable: hidden
       -
         handle: template
         field:

@@ -5,3 +5,24 @@
   color: #fff;
 }
 
+div.container {
+  max-width: 1440px;
+  padding-right: 5.563em;
+  padding-left: 5.563em;
+}
+
+a.btn {
+  padding: 10px 25px;
+  background: #1C1C1C;
+  color: #fff;
+}
+
+a.btn:hover {
+  background: #07A5D2;
+  color: #fff;
+}
+
+#about-me .btn-container a {
+  margin-right: 20px;
+}
+

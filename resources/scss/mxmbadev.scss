@@ -1,9 +1,4 @@
 @import "global/all";
 
-html body{
-    background-color: $black;
-    color: $white;
-}
-
 @import "pages/home";
 @import "pages/projects";

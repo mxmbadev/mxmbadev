@@ -3,3 +3,23 @@
 @import "colors";
 @import "mixins";
 @import "media-queries";
+
+html body{
+    background-color: $black;
+    color: $white;
+}
+div.container{
+    max-width: 1440px;
+    padding-right: 5.563em;
+    padding-left: 5.563em;
+}
+
+a.btn{
+    padding: 10px 25px;
+    background: $btn-gray;
+    color: $white;
+    &:hover{
+        background: $blue;
+        color: $white;
+    }
+}
