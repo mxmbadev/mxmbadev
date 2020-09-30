@@ -115,15 +115,38 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/scss/bootstrap.scss":
+/*!***************************************!*\
+  !*** ./resources/scss/bootstrap.scss ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/scss/mxmbadev.scss":
+/*!**************************************!*\
+  !*** ./resources/scss/mxmbadev.scss ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ 0:
-/*!*****************************************************************!*\
-  !*** multi ./resources/js/site.js ./resources/css/tailwind.css ***!
-  \*****************************************************************/
+/*!***************************************************************************************************!*\
+  !*** multi ./resources/js/site.js ./resources/scss/mxmbadev.scss ./resources/scss/bootstrap.scss ***!
+  \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /Users/mxmba/Documents/mxmba.dev/mxmbadev/resources/js/site.js */"./resources/js/site.js");
-!(function webpackMissingModule() { var e = new Error("Cannot find module '/Users/mxmba/Documents/mxmba.dev/mxmbadev/resources/css/tailwind.css'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+__webpack_require__(/*! /Users/mxmba/Documents/mxmba.dev/mxmbadev/resources/scss/mxmbadev.scss */"./resources/scss/mxmbadev.scss");
+module.exports = __webpack_require__(/*! /Users/mxmba/Documents/mxmba.dev/mxmbadev/resources/scss/bootstrap.scss */"./resources/scss/bootstrap.scss");
 
 
 /***/ })

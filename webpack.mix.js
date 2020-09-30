@@ -13,17 +13,19 @@ require('laravel-mix-purgecss');
  */
 
 mix.js('resources/js/site.js', 'public/js')
-mix.postCss('resources/css/tailwind.css', 'public/css', [
-  require('postcss-import'),
-  require('tailwindcss'),
-  require('postcss-nested'),
-  require('postcss-preset-env')({stage: 0})
-])
+  .sass('resources/scss/mxmbadev.scss', 'public/css/mxmbadev.css')
+  .sass('resources/scss/bootstrap.scss', 'public/css/bootstrap.css');
+// mix.postCss('resources/css/tailwind.css', 'public/css', [
+//   require('postcss-import'),
+//   require('tailwindcss'),
+//   require('postcss-nested'),
+//   require('postcss-preset-env')({stage: 0})
+// ])
 
-if (mix.inProduction()) {
-  mix.version();
-  mix.purgeCss({
-    enabled: true,
-    whitelistPatternsChildren: [/^content$/],
-  });
-}
+// if (mix.inProduction()) {
+//   mix.version();
+//   mix.purgeCss({
+//     enabled: true,
+//     whitelistPatternsChildren: [/^content$/],
+//   });
+// }
