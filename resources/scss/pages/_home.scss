@@ -1,5 +1,16 @@
+#hero{
+    .row{
+        height: 60vh;
+        h1{ font-size: 8rem; }
+    }
+}
+
 #about-me{
     .btn-container a{
         margin-right: 20px;
     }
+}
+
+#my-work{
+    padding: 6% 0;
 }

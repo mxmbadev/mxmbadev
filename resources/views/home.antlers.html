@@ -1,6 +1,6 @@
 <section id="hero">
     <div class="container">
-        <div class="row">
+        <div class="row align-items-center">
             <h1>{{ hero_text }}</h1>
         </div>
     </div>
@@ -10,17 +10,26 @@
         <div class="row">
             <div class="col-12">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-5">
                         <p>
                             {{ about_me}}
                         </p>
                     </div>
-                    <div class="col-md-6">img</div>
+                    <div class="col-md-6 offset-md-1"><img src="{{ image }}" alt="{{ image:alt }}" class="img-fluid"></div>
                 </div>
             </div>
             <div class="col-12 btn-container">
                 <a href="#" class="btn">View Project</a>
                 <a href="#" class="btn">Contact Me</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="my-work">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>My Work</h1>
             </div>
         </div>
     </div>
