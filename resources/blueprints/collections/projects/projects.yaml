@@ -1,0 +1,91 @@
+title: Projects
+sections:
+  projects_on_home_page:
+    display: 'Projects on Home Page'
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: card_image
+        field:
+          mode: grid
+          container: assets
+          folder: site/projects
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: 'Card Image'
+          type: assets
+          icon: assets
+          instructions: 'This image will show in the home page.'
+          listable: hidden
+      -
+        handle: content
+        field:
+          type: markdown
+          localizable: true
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required
+  project_s_page:
+    display: 'Project''s Page'
+    fields:
+      -
+        handle: project_details
+        field:
+          always_show_set_button: true
+          sets:
+            image:
+              display: Image
+              fields:
+                -
+                  handle: image
+                  field:
+                    mode: grid
+                    container: assets
+                    folder: site/projects
+                    restrict: false
+                    allow_uploads: true
+                    max_files: 1
+                    display: image
+                    type: assets
+                    icon: assets
+                    listable: hidden
+          buttons:
+            - h2
+            - h3
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+            - image
+            - table
+          container: assets
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: true
+          reading_time: false
+          fullscreen: true
+          allow_source: false
+          display: 'Project Details'
+          type: bard
+          icon: bard
+          listable: hidden

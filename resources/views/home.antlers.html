@@ -31,6 +31,25 @@
             <div class="col-md-12">
                 <h1>My Work</h1>
             </div>
+            <div class="col-md-12 projects">
+                {{ collection:projects limit="5" as="projects" }}
+                <div class="row">
+                    {{ projects }}
+                    <a class="project-card" href="{{ url }}">
+                        <div class="col-md-4">
+                            <img class="img-fluid" src="{{ card_image }}" alt="{{ alt }}">
+                            <h2>
+                                {{ title | widont }}
+                            </h2>
+                            <p>
+                                {{ excerpt | widont ?? content | strip_tags | safe_truncate:160:...}}
+                            </p>
+                        </div>
+                    </a>
+                    {{ /projects }}
+                </div>
+                {{ /collection:projects }}
+            </div>
         </div>
     </div>
 </section>

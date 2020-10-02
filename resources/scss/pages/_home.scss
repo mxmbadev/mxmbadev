@@ -13,4 +13,17 @@
 
 #my-work{
     padding: 6% 0;
+    .projects{
+        padding-top: 3%;
+        .project-card{
+            color: $white;
+            h2{
+                padding-top: 40px;
+                font-family: 'Archivo Black', sans-serif;
+                font-weight: bold;
+                font-size: 2rem;
+                letter-spacing: 1px;
+            }
+        }
+    }
 }
