@@ -35,8 +35,8 @@
                 {{ collection:projects limit="5" as="projects" }}
                 <div class="row">
                     {{ projects }}
-                    <a class="project-card" href="{{ url }}">
-                        <div class="col-md-4">
+                    <div class="col-md-4 {{ work_type }} {{ slug }} {{ /work_type }}">
+                        <a class="project-card" href="{{ url }}">
                             <img class="img-fluid" src="{{ card_image }}" alt="{{ alt }}">
                             <h2>
                                 {{ title | widont }}
@@ -44,8 +44,8 @@
                             <p>
                                 {{ excerpt | widont ?? content | strip_tags | safe_truncate:160:...}}
                             </p>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                     {{ /projects }}
                 </div>
                 {{ /collection:projects }}

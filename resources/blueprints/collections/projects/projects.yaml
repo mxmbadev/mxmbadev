@@ -40,6 +40,18 @@ sections:
           localizable: true
           validate:
             - required
+      -
+        handle: work_type
+        field:
+          mode: typeahead
+          taxonomies:
+            - work_type
+          display: 'Work Type'
+          type: terms
+          icon: taxonomy
+          listable: hidden
+          validate:
+            - required
   project_s_page:
     display: 'Project''s Page'
     fields:
