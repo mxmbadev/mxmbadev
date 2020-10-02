@@ -6,7 +6,7 @@
 }
 
 html h1 {
-  font-size: 4rem;
+  font-size: 4.7rem;
   font-weight: 700;
   font-family: "Archivo Black", sans-serif;
 }
@@ -34,8 +34,8 @@ a.btn:hover {
   color: #fff;
 }
 
-#hero .row {
-  height: 60vh;
+#hero {
+  padding: 200px 0px;
 }
 
 #hero .row h1 {

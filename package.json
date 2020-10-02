@@ -28,6 +28,7 @@
     "bootstrap-scss": "^4.5.2",
     "isotope-layout": "^3.0.6",
     "jquery": "^3.5.1",
+    "jquery-bridget": "^2.0.1",
     "watch": "^1.0.2"
   },
   "name": "mxmbadev",
