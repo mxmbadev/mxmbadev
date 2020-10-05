@@ -17,8 +17,10 @@ p {
 
 div.container {
   max-width: 1440px;
-  padding-right: 5.563em;
-  padding-left: 5.563em;
+  padding-right: 5.563rem;
+  padding-left: 5.563rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 a.btn {
@@ -38,6 +40,7 @@ a.btn:hover {
 
 #hero .row h1 {
   font-size: 8rem;
+  letter-spacing: 0px;
 }
 
 #about-me .btn-container a {
@@ -46,6 +49,18 @@ a.btn:hover {
 
 #my-work {
   padding: 6% 0;
+}
+
+#my-work .category-list {
+  margin-top: 3%;
+}
+
+#my-work .category-list .categories {
+  padding: 0 10px;
+}
+
+#my-work .category-list .categories a.active-category {
+  background-color: #07A5D2;
 }
 
 #my-work .projects {

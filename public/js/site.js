@@ -14541,7 +14541,7 @@ $(function () {
     itemSelector: ".grid-item",
     filter: "*"
   });
-  $('a.categories').on("click", function () {
+  $('.categories a').on("click", function () {
     var selector = $(this).attr('data-filter');
     $('.projects').isotope({
       filter: selector
