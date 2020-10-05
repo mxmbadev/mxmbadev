@@ -33,17 +33,19 @@
                 <h1>My Work</h1>
             </div>
             <div class="col-md-12 category-list">
-                <div class="col-xs-12 col-sm-6 col-md col-lg"><a data-filter="*" class="categories active-category">View All</a></div>
-                <div class="col-xs-12 col-sm-6 col-md col-lg"><a data-filter=".web-design" class="categories">Web Design</a></div>
-                <div class="col-xs-12 col-sm-6 col-md col-lg"><a data-filter=".web-development" class="categories">Web Development</a></div>
-                <div class="col-xs-12 col-sm-6 col-md col-lg"><a data-filter=".graphic-design" class="categories">Graphic Design</a></div>
-            </div>
-            <div class="col-md-12 projects">
-                {{ collection:projects as="projects" }}
                 <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3"><a data-filter="*" class="categories active-category">View All</a></div>
+                    <div class="col-xs-12 col-sm-6 col-md-3"><a data-filter=".web-design" class="categories">Web Design</a></div>
+                    <div class="col-xs-12 col-sm-6 col-md-3"><a data-filter=".web-development" class="categories">Web Development</a></div>
+                    <div class="col-xs-12 col-sm-6 col-md-3"><a data-filter=".graphic-design" class="categories">Graphic Design</a></div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                {{ collection:projects as="projects" }}
+                <div class="row projects">
                     {{ projects }}
-                    <div class="grid-item col-md-4 {{ work_type }} {{ slug }} {{ /work_type }}">
-                        <a class="project-card" href="{{ url }}">
+                    <div class="grid-item project-card col-md-4 {{ work_type }} {{ slug }} {{ /work_type }}">
+                        <a href="{{ url }}">
                             <img class="img-fluid" src="{{ card_image }}" alt="{{ alt }}">
                             <h2>
                                 {{ title | widont }}

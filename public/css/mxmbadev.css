@@ -1,6 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Lato:wght@400;
-
-700;900&display=swap);html body {
+html body {
   background-color: #000;
   color: #fff;
 }
@@ -8,7 +6,7 @@
 html h1 {
   font-size: 4.7rem;
   font-weight: 700;
-  font-family: "Archivo Black", sans-serif;
+  font-family: "Roboto1", sans-serif;
 }
 
 p {
@@ -55,14 +53,22 @@ a.btn:hover {
 }
 
 #my-work .projects .project-card {
-  color: #fff;
+  width: 100%;
+  padding-bottom: 6%;
 }
 
-#my-work .projects .project-card h2 {
-  padding-top: 40px;
-  font-family: "Archivo Black", sans-serif;
-  font-weight: bold;
+#my-work .projects .project-card a {
+  color: #fff;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#my-work .projects .project-card a h2 {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
   font-size: 2rem;
-  letter-spacing: 1px;
 }
 

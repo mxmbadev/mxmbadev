@@ -1,19 +1,23 @@
 <!doctype html>
 <html lang="{{ site_short_locale }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{ title }} — {{ settings:site_name }}</title>
-        <meta name="description" content="{{ excerpt ?? title }}">
-        <meta name="theme-color" content="00908F">
-        <link rel="stylesheet" href="{{ mix src='css/mxmbadev.css' }}">
-        <link rel="stylesheet" href="{{ mix src='css/bootstrap.css' }}">
-        <script src="{{ mix src='/js/site.js' }}"></script>
-    </head>
-    <body>
-        {{ partial:nav }}
-        {{ template_content }}
-        {{ partial:footer }}
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title }} — {{ settings:site_name }}</title>
+    <meta name="description" content="{{ excerpt ?? title }}">
+    <meta name="theme-color" content="00908F">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Lato:wght@400;700&family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ mix src='css/mxmbadev.css' }}">
+    <link rel="stylesheet" href="{{ mix src='css/bootstrap.css' }}">
+    <script src="{{ mix src='/js/site.js' }}"></script>
+</head>
+
+<body>
+    {{ partial:nav }}
+    {{ template_content }}
+    {{ partial:footer }}
+</body>
+
 </html>

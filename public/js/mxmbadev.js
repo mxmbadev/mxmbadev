@@ -93,11 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-if (window.jquery) {
-  console.log("jquery is loaded");
-} else {
-  console.log("not loaded");
-}
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open '/Users/mxmba/Documents/mxmba.dev/mxmbadev/resources/js/mxmbadev.js'");
 
 /***/ }),
 

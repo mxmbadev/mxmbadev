@@ -1,28 +1,47 @@
 var $ = require('jquery');
-var jQueryBridget = require('jquery-bridget');
-var Isotope = require('isotope-layout');
-
-jQueryBridget( 'isotope', Isotope, $ );
-
-$('.projects').isotope({
-    itemSelector: '.grid-item',
-    filter: "*",
-    masonry: {
-        columnWidth: '.grid-sizer'
-    }
-});
-
-$('.category-list a.categories').on('click', function(){
-    var selector = $(this).attr('data-filter');
-
+$(function(){
+    var jQueryBridget = require('jquery-bridget');
+    var Isotope = require('isotope-layout');
+    
+    jQueryBridget( 'isotope', Isotope, $ );
+    
     $('.projects').isotope({
-        filter: selector,
-    })
+        itemSelector: ".grid-item",
+        filter: "*"
+    });
+    
+    $('a.categories').on("click", function(){
+        var selector = $(this).attr('data-filter');
+    
+        $('.projects').isotope({
+            filter: selector,
+        })
+    
+        //changing active class with click event
+        $('a.active-category').removeClass('active-category');
+        $(this).addClass('active-category');
+    });
 
-    //changing active class with click event
-    $('.category-list a.active-category').removeClass('active-category');
-    $(this).addClass('active-category');
-});
+})
+
+// $('.projects').isotope({
+//     itemSelector: '.grid-item',
+//     filter: "*"
+// });
+
+// $('a.categories').on("click", function(){
+//     var selector = $(this).attr('data-filter');
+
+//     $('.projects').isotope({
+//         filter: selector,
+//     })
+
+//     //changing active class with click event
+//     $('a.active-category').removeClass('active-category');
+//     $(this).addClass('active-category');
+// });
+
+
 // $('.grid').isotope({
 //   // options...
 // });
