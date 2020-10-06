@@ -43,3 +43,14 @@
         }
     }
 }
+
+#slogan{
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    h1{
+        padding: 30% 0;
+        text-align: center;
+        color: $black;
+    }
+}

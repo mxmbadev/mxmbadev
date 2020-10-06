@@ -12,6 +12,8 @@ sections:
           display: Title
           validate:
             - required
+          listable: hidden
+          input_type: text
       -
         handle: hero_text
         field:
@@ -20,6 +22,8 @@ sections:
           type: text
           icon: text
           listable: hidden
+          validate:
+            - required
       -
         handle: template
         field:
@@ -59,6 +63,8 @@ sections:
           type: markdown
           display: 'About Me'
           listable: hidden
+          validate:
+            - required
       -
         handle: image
         field:
@@ -72,3 +78,33 @@ sections:
           icon: assets
           listable: hidden
           folder: site
+          validate:
+            - required
+  slogan:
+    display: Slogan
+    fields:
+      -
+        handle: slogan
+        field:
+          input_type: text
+          display: Slogan
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: slogan_bg_img
+        field:
+          mode: grid
+          container: assets
+          folder: site
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: 'Slogan Background Image'
+          type: assets
+          icon: assets
+          listable: hidden
+          validate:
+            - required

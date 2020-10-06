@@ -87,3 +87,15 @@ a.btn:hover {
   font-size: 2rem;
 }
 
+#slogan {
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#slogan h1 {
+  padding: 30% 0;
+  text-align: center;
+  color: #000;
+}
+
