@@ -1,0 +1,53 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: first_name
+        field:
+          input_type: text
+          display: 'First Name'
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: last_name
+        field:
+          input_type: text
+          display: 'Last Name'
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: email
+        field:
+          input_type: text
+          display: Email
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: phone_number
+        field:
+          input_type: text
+          display: 'Phone Number'
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: comments
+        field:
+          display: Comments
+          type: textarea
+          icon: textarea
+          listable: hidden
+          validate:
+            - required

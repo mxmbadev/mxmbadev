@@ -34,6 +34,10 @@ a.btn:hover {
   color: #fff;
 }
 
+.honeypot {
+  display: none;
+}
+
 #hero {
   padding: 200px 0px;
 }

@@ -73,6 +73,50 @@
     </div>
 </section>
 
+<section id="contact-me">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                {{ form:contact_form }}
+                    <div class="form-row">
+                        {{ if success }}
+                            <div class="col-12">
+                                <h1>{{ success }}</h1>
+                            </div>
+                        {{ else }}
+                            {{ if errors }}
+                                <div class="col-12 error-msg">
+                                    {{ errors }}
+                                        {{ value }}<br>
+                                    {{ /errors }}
+                                </div>
+                            {{ /if }}
+    
+                            <!-- Loop through and render the form inputs -->
+                            {{ fields }}
+                                
+                                <div class="{{ if field:type == 'textarea' }}col-md-12 {{ else }} col-md-3 form-group {{ /if }}">
+                                    <label>{{ display }}</label>
+                                    
+                                    {{ field }}
+                                    {{ if error }}
+                                        <p class="text-gray-500">{{ error }}</p>
+                                    {{ /if }}
+                                </div>
+                            {{ /fields }}
+                            <input type="text" name="honeypot" class="honeypot" />
+    
+                            <!-- This is just a submit button. -->
+                            <button type="submit">Submit</button>
+                        {{ /if }}
+                    </div>
+
+                {{ /form:contact_form }}
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- <div class="max-w-5xl mx-auto relative py-16 lg:pt-40 lg:pb-32">
     <article class="content">
         <h1>{{ hero_text }}</h1>
