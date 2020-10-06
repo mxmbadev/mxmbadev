@@ -103,3 +103,34 @@ a.btn:hover {
   color: #000;
 }
 
+#contact-me {
+  padding: 6% 0;
+}
+
+#contact-me .form-group {
+  padding-top: 3%;
+}
+
+#contact-me .form-group input,
+#contact-me .form-group textarea {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+}
+
+#contact-me .form-group input:focus,
+#contact-me .form-group textarea:focus {
+  box-shadow: none;
+  outline: transparent;
+  border-bottom-color: #07A5D2;
+}
+
+#contact-me button {
+  padding: 10px 25px;
+  background: #07A5D2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+

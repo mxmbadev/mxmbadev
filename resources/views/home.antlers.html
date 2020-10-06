@@ -77,6 +77,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
+                <h1>Contact Me</h1>
                 {{ form:contact_form }}
                     <div class="form-row">
                         {{ if success }}
@@ -95,9 +96,8 @@
                             <!-- Loop through and render the form inputs -->
                             {{ fields }}
                                 
-                                <div class="{{ if field:type == 'textarea' }}col-md-12 {{ else }} col-md-3 form-group {{ /if }}">
-                                    <label>{{ display }}</label>
-                                    
+                                <div class="{{ if field:type == 'textarea' }}col-md-12 {{ else }}col-md-3 {{ /if }}form-group">
+                                    <label>{{ display }}</label>    
                                     {{ field }}
                                     {{ if error }}
                                         <p class="text-gray-500">{{ error }}</p>

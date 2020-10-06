@@ -54,3 +54,28 @@
         color: $black;
     }
 }
+
+#contact-me{
+    padding: 6% 0;
+    .form-group{
+        padding-top: 3%;
+        input, textarea{
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            border-bottom: 2px solid $white;
+            &:focus{
+                box-shadow: none;
+                outline: transparent;
+                border-bottom-color: $blue;
+            }
+        }
+    }
+    button{
+        padding: 10px 25px;
+        background: $blue;
+        color: $white;
+        border: none;
+        border-radius: 4px;
+    }
+}
