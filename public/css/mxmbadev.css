@@ -165,6 +165,7 @@ a.btn.sec-btn:hover {
 
 #project-details img {
   padding-bottom: 6%;
+  border-radius: 4px;
 }
 
 #project-details img:last-child {
