@@ -1,4 +1,33 @@
-<nav class="flex items-center justify-between lg:justify-start flex-wrap py-10 max-w-5xl mx-auto">
+<nav>
+    <div class="container">
+        <ul class="nav">
+            <div class="logo">
+                <a href="{{ homepage }}"><img src="{{ logo }} {{ image }} {{ /logo }}" alt="Mxmba.Dev Logo"></a>
+            </div>
+            <div class="nav-items">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ homepage }}" target="_blank">Who?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ homepage }}#my-work">My Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/mxmbadev" target="_blank">Github</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com/in/bespinoza10/" target="_blank">LinkedIn</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ homepage }}#contact-me">Contact Me</a>
+                </li>
+            </div>
+        </ul>
+    </div>
+</nav>
+
+
+
+<!-- <nav class="flex items-center justify-between lg:justify-start flex-wrap py-10 max-w-5xl mx-auto">
     <div class="text-md antialiased font-medium">
         <a href="/" class="block text-xl lg:inline-block mr-12 font-black">{{ settings:site_name }}</a>
     </div>
@@ -24,4 +53,4 @@
         </a>
         {{ /nav }}
     </div>
-</nav>
+</nav> -->

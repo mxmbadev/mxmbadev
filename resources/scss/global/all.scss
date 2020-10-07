@@ -7,6 +7,24 @@ html body{
     color: $white;
 }
 
+nav{
+    padding-top: 1%;
+    .logo{
+        width: 10%;
+    }
+    .nav-items{
+        display: flex;
+        width: 90%;
+        justify-content: flex-end;
+        li a{
+            color: $white;
+            &:hover{
+                color: $blue;
+            }
+        }
+    }
+}
+
 html h1{
     font-size: 4.7rem;
     font-weight: 700;

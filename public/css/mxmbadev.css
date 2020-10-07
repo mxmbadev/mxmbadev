@@ -3,6 +3,30 @@ html body {
   color: #fff;
 }
 
+nav {
+  padding-top: 1%;
+}
+
+nav .logo {
+  width: 10%;
+}
+
+nav .nav-items {
+  display: -webkit-box;
+  display: flex;
+  width: 90%;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+}
+
+nav .nav-items li a {
+  color: #fff;
+}
+
+nav .nav-items li a:hover {
+  color: #07A5D2;
+}
+
 html h1 {
   font-size: 4.7rem;
   font-weight: 700;
