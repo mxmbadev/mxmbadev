@@ -1,3 +1,57 @@
+@media screen and (max-width: 1180px) {
+  #about-me img {
+    padding: 3% 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  section#hero {
+    padding: 100px 0;
+  }
+
+  section#hero .row h1 {
+    font-size: 6rem;
+  }
+
+  #about-me {
+    padding-bottom: 10%;
+  }
+
+  #about-me img {
+    padding: 6% 0;
+  }
+
+  .category-list .categories {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  section#hero .row h1 {
+    font-size: 3rem;
+  }
+
+  section#slogan h1 {
+    overflow-wrap: break-word;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html div.container,
+  nav.navbar .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  section#hero .row h1 {
+    font-size: 2.5rem;
+  }
+
+  #about-me .btn:first-child {
+    margin-bottom: 20px;
+  }
+}
+
 html body {
   background-color: #000;
   color: #fff;
@@ -7,23 +61,28 @@ nav {
   padding-top: 1%;
 }
 
-nav .logo {
-  width: 10%;
+nav button:focus {
+  border: none;
+  outline: none;
 }
 
-nav .nav-items {
-  display: -webkit-box;
-  display: flex;
-  width: 90%;
+nav button div {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px 0;
+}
+
+nav .navbar-collapse {
   -webkit-box-pack: end;
           justify-content: flex-end;
 }
 
-nav .nav-items li a {
+nav .navbar-collapse li a {
   color: #fff;
 }
 
-nav .nav-items li a:hover {
+nav .navbar-collapse li a:hover {
   color: #07A5D2;
 }
 
@@ -33,12 +92,25 @@ html h1 {
   font-family: "Roboto1", sans-serif;
 }
 
+@media screen and (max-width: 900px) {
+  html h1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  html h1 {
+    font-size: 2.5rem;
+  }
+}
+
 p {
   font-size: 20px;
   font-family: "Lato", sans-serif;
   font-weight: 100;
 }
 
+nav.navbar .container,
 div.container {
   max-width: 1440px;
   padding-right: 5.563rem;

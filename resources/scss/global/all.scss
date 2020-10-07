@@ -9,12 +9,19 @@ html body{
 
 nav{
     padding-top: 1%;
-    .logo{
-        width: 10%;
+    button{
+        &:focus{
+            border:none;
+            outline: none;
+        }
+        div {
+            width: 30px;
+            height: 3px;
+            background-color: $white;
+            margin: 6px 0;
+        }
     }
-    .nav-items{
-        display: flex;
-        width: 90%;
+    .navbar-collapse{
         justify-content: flex-end;
         li a{
             color: $white;
@@ -31,13 +38,20 @@ html h1{
     font-family: 'Roboto1', sans-serif;
 }
 
+@media screen and (max-width: 900px) {
+    html h1{ font-size: 4rem;}
+}
+@media screen and (max-width: 750px){
+    html h1 { font-size: 2.5rem ;}
+}
+
 p{
     font-size: 20px;
     font-family: 'Lato', sans-serif;
     font-weight: 100;
 }
 
-div.container{
+nav.navbar .container, div.container{
     max-width: 1440px;
     padding-right: 5.563rem;
     padding-left: 5.563rem;
