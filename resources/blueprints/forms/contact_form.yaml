@@ -1,6 +1,12 @@
 sections:
   main:
     display: Main
+    email:
+      -
+        to: espinozab100@gmail.com
+        from: espinozab100@gmail.com
+        subject: You've got mail!
+
     fields:
       -
         handle: first_name
