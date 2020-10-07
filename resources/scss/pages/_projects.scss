@@ -1,0 +1,18 @@
+#project-hero{
+    padding: 6% 0;
+    h1{ word-wrap: break-word;}
+    p.work-type{ 
+        color: $blue;
+        font-weight: 100;
+    }
+}
+
+#project-details{
+    padding-top: 3%;
+    img{
+        padding-bottom: 6%;
+        &:last-child{
+            padding-bottom: 0px;
+        }
+    }
+}

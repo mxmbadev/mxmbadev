@@ -1,0 +1,67 @@
+title: 'Project Landing Page'
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          character_limit: 0
+          display: Title
+          validate:
+            - required
+      -
+        handle: template
+        field:
+          type: template
+          display: Template
+      -
+        handle: bottom_slogan
+        field:
+          display: 'Bottom Slogan'
+          type: section
+          icon: section
+          listable: hidden
+      -
+        handle: slogan
+        field:
+          input_type: text
+          display: Slogan
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: background_image
+        field:
+          mode: grid
+          container: assets
+          folder: site/projects
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: 'Background Image'
+          type: assets
+          icon: assets
+          listable: hidden
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false
+          localizable: true

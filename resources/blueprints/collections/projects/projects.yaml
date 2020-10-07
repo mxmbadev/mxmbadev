@@ -8,8 +8,28 @@ sections:
         field:
           type: text
           required: true
+          width: 50
           validate:
             - required
+      -
+        handle: if_website
+        field:
+          display: 'Website?'
+          type: toggle
+          icon: toggle
+          instructions: 'Toggle if project has a website'
+          width: 50
+          listable: hidden
+      -
+        handle: website
+        field:
+          type: text
+          display: Website
+          listable: hidden
+          input_type: text
+          instructions: 'Please enter full url. Ex: example@website.com'
+          if:
+            if_website: 'equals true'
       -
         handle: card_image
         field:

@@ -134,3 +134,28 @@ a.btn:hover {
   border-radius: 4px;
 }
 
+#project-hero {
+  padding: 6% 0;
+}
+
+#project-hero h1 {
+  word-wrap: break-word;
+}
+
+#project-hero p.work-type {
+  color: #07A5D2;
+  font-weight: 100;
+}
+
+#project-details {
+  padding-top: 3%;
+}
+
+#project-details img {
+  padding-bottom: 6%;
+}
+
+#project-details img:last-child {
+  padding-bottom: 0px;
+}
+

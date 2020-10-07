@@ -1,0 +1,30 @@
+<section id="project-hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>{{ title }}</h1>
+                <p class="work-type">{{ work_type }} {{ if last }} {{ title }} {{ else }} {{ title }} / {{ /if }} {{ /work_type }}</p>
+            </div>
+            <div class="col-md-6">
+                <p>{{ content | widont }}</p>
+                {{ if if_website }}
+                    <a href="{{ website }}" target="_blank" class="btn">Visit Website</a>
+                {{ /if }}
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="project-details">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                {{ project_details }}
+                    {{ if type == "image" }}
+                        <img src="{{ image }}" class="img-fluid" alt="{{ caption }}">
+                    {{ /if }}
+                {{ /project_details }}
+            </div>
+        </div>
+    </div>
+</section>

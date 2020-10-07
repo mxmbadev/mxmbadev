@@ -1,5 +1,8 @@
 title: Projects
+mount: f33b7c21-333a-40ef-a593-373155efff97
+route: '{mount}/{slug}'
+template: projects.show
 revisions: false
 date_behavior:
   past: public
-  future: public
+  future: private
