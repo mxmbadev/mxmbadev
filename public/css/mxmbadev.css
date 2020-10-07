@@ -34,6 +34,17 @@ a.btn:hover {
   color: #fff;
 }
 
+a.btn.sec-btn {
+  padding: 10px 25px;
+  background: #fff;
+  color: #000;
+}
+
+a.btn.sec-btn:hover {
+  background: #07A5D2;
+  color: #fff;
+}
+
 .honeypot {
   display: none;
 }
@@ -149,6 +160,7 @@ a.btn:hover {
 
 #project-details {
   padding-top: 3%;
+  padding-bottom: 6%;
 }
 
 #project-details img {
@@ -157,5 +169,21 @@ a.btn:hover {
 
 #project-details img:last-child {
   padding-bottom: 0px;
+}
+
+#sec-slogan {
+  background-position: center;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+#sec-slogan .slogan-content {
+  padding: 10% 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#sec-slogan .slogan-content h1 {
+  color: #fff;
 }
 

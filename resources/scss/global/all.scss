@@ -35,6 +35,15 @@ a.btn{
         background: $blue;
         color: $white;
     }
+    &.sec-btn{
+        padding: 10px 25px;
+        background: $white;
+        color: $black;
+        &:hover{
+            background: $blue;
+            color: $white;
+        }
+    }
 }
 
 .honeypot{
