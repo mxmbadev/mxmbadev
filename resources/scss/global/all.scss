@@ -28,6 +28,9 @@ nav{
             &:hover{
                 color: $blue;
             }
+            &.contact-me{
+                color: orange;
+            }
         }
     }
 }

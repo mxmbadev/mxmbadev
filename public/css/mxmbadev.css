@@ -86,6 +86,10 @@ nav .navbar-collapse li a:hover {
   color: #07A5D2;
 }
 
+nav .navbar-collapse li a.contact-me {
+  color: orange;
+}
+
 html h1 {
   font-size: 4.7rem;
   font-weight: 700;
@@ -204,42 +208,14 @@ a.btn.sec-btn:hover {
   background-size: cover;
 }
 
-#slogan h1 {
-  padding: 30% 0;
+#slogan .slogan-content {
+  padding: 20% 0;
+  margin: 0 auto;
   text-align: center;
+}
+
+#slogan .slogan-content h1 {
   color: #000;
-}
-
-#contact-me {
-  padding: 6% 0;
-}
-
-#contact-me .form-group {
-  padding-top: 3%;
-}
-
-#contact-me .form-group input,
-#contact-me .form-group textarea {
-  width: 100%;
-  background-color: transparent;
-  border: none;
-  border-bottom: 2px solid #fff;
-  color: #fff;
-}
-
-#contact-me .form-group input:focus,
-#contact-me .form-group textarea:focus {
-  box-shadow: none;
-  outline: transparent;
-  border-bottom-color: #07A5D2;
-}
-
-#contact-me button {
-  padding: 10px 25px;
-  background: #07A5D2;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
 }
 
 #project-hero {
