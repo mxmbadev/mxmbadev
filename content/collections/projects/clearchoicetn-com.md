@@ -6,7 +6,7 @@ work_type:
   - web-development
   - graphic-design
 updated_by: 3a0faa51-b79e-40e5-9dc6-61c8de686bd6
-updated_at: 1602054229
+updated_at: 1604688420
 project_details:
   -
     type: paragraph
@@ -15,13 +15,13 @@ project_details:
     attrs:
       values:
         type: image
-        image: site/projects/project-details/clear-choice-2021.png
+        image: site/projects/project-details/clear-choice-2021.jpg
   -
     type: set
     attrs:
       values:
         type: image
-        image: site/projects/project-details/clearchoice-bc.png
+        image: site/projects/project-details/clearchoice-flyer.jpg
   -
     type: paragraph
   -
@@ -29,7 +29,7 @@ project_details:
     attrs:
       values:
         type: image
-        image: site/projects/project-details/clearchoice-flyer.png
+        image: site/projects/project-details/clearchoice-bc.jpg
   -
     type: paragraph
 website: 'https://www.clearchoicetn.com'

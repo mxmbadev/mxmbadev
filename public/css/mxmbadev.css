@@ -184,7 +184,7 @@ a.btn.sec-btn:hover {
 
 #my-work .projects .project-card {
   width: 100%;
-  padding-bottom: 6%;
+  height: 500px;
 }
 
 #my-work .projects .project-card a {
