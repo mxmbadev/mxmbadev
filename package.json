@@ -10,15 +10,15 @@
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "devDependencies": {
-    "autoprefixer": "^9.6.1",
+    "autoprefixer": "^10.4.19",
     "cross-env": "^5.1",
-    "gulp": "^4.0.2",
-    "laravel-mix": "^5.0.5",
-    "laravel-mix-purgecss": "^4.0.0",
-    "postcss-import": "^12.0.1",
-    "postcss-nested": "^4.1.2",
-    "postcss-preset-env": "^6.7.0",
-    "resolve-url-loader": "^3.1.0",
+    "gulp": "^3.9.1",
+    "laravel-mix": "^5.0.9",
+    "laravel-mix-purgecss": "^6.0.0",
+    "postcss-import": "^16.1.0",
+    "postcss-nested": "^6.0.1",
+    "postcss-preset-env": "^9.5.2",
+    "resolve-url-loader": "^5.0.0",
     "sass": "^1.26.11",
     "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11"
@@ -29,7 +29,7 @@
     "isotope-layout": "^3.0.6",
     "jquery": "^3.5.1",
     "jquery-bridget": "^2.0.1",
-    "watch": "^1.0.2"
+    "watch": "^0.13.0"
   },
   "name": "mxmbadev",
   "description": "<h1 align=\"center\">   Mxmba.Dev </h1>",
