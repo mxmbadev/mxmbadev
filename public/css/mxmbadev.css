@@ -77,6 +77,10 @@ html h1 {
   font-family: "Roboto1", sans-serif;
 }
 
+a {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 900px) {
   html h1 {
     font-size: 4rem;
